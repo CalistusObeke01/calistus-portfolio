@@ -9,7 +9,7 @@ import Work from "../components/work";
 
 const IndexPage = () => (
   <Layout>
-    <SEO title="Home" />
+    <SEO title="Obeke Calistus" />
     <Intro />
     <div className="social-index">
       <Social />
