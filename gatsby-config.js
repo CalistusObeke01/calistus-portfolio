@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: `Front-end Developer`,
+    title: `Front-End Developer`,
     description: `A fast growing talented developer with experience in building visually appealing 
     interfaces using suitable web technologies and following best practices.`,
     author: `Obeke Calistus`,
