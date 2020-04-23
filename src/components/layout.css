@@ -689,12 +689,21 @@ pre tt:after {
   text-decoration: none;
   color: #1AB36B;
   display: block;
+  transition: all 1s ease-out;
 }
 
-#navbar nav ul li a:hover  {
-  border-bottom: 2px solid #1AB36B;
-  padding-bottom: 0;
-  width: 100%;
+#navbar nav ul li a::after {
+  content: '';
+  display: block;
+  height: 3px;
+  background: #1ab36b;
+  position: absolute;
+  bottom: 20;
+  transition: all ease-in 250ms;
+}
+
+#navbar nav ul li a:hover::after {
+  width: 5%;
 }
 
 .menu-toggle {
@@ -985,6 +994,11 @@ div:last-of-type hr {
   #navbar .show-nav {
     display: block;
     margin-top: -0.92rem;
+    /* -webkit-transition: 5s ease-in-out;
+    -moz-transition: 5s ease-in-out;
+    -o-transition: 5s ease-in-out;
+    transition: 5s ease-in-out; */
+    transition-duration: 4s;
   }
 
   #navbar nav.active {
