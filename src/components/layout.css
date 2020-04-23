@@ -616,11 +616,6 @@ pre tt:before,
 pre tt:after {
   content: "";
 }
-@media only screen and (max-width: 480px) {
-  html {
-    font-size: 100%;
-  }
-}
 
 .btnStyling {
   color: #fff;
@@ -689,7 +684,6 @@ pre tt:after {
   text-decoration: none;
   color: #1AB36B;
   display: block;
-  transition: all 1s ease-out;
 }
 
 #navbar nav ul li a::after {
@@ -699,7 +693,6 @@ pre tt:after {
   background: #1ab36b;
   position: absolute;
   bottom: 20;
-  transition: all ease-in 250ms;
 }
 
 #navbar nav ul li a:hover::after {
@@ -979,16 +972,24 @@ div:last-of-type hr {
     background: #000000;
     top: 80px;
     left: 0;
-    transition: 0.5s;
+    /* transition: 0.5s; */
     padding-bottom: 2rem;
     border-bottom-left-radius: 2rem;
     border-bottom: 1px solid #707070;
     text-align: center;
   }
 
+  #navbar .show-nav ul {
+    margin-left: 0;
+  }
+
   #navbar nav ul li a:hover {
     color: #ffffff;
     border-bottom: none;
+  }
+
+  #navbar nav ul li a::after {
+    display: none;
   }
 
   #navbar .hide-nav {
@@ -998,11 +999,10 @@ div:last-of-type hr {
   #navbar .show-nav {
     display: block;
     margin-top: -0.92rem;
-    /* -webkit-transition: 5s ease-in-out;
-    -moz-transition: 5s ease-in-out;
-    -o-transition: 5s ease-in-out;
-    transition: 5s ease-in-out; */
-    transition-duration: 4s;
+    -webkit-transition: .5s ease-in-out;
+    -moz-transition: .5s ease-in-out;
+    -o-transition: .5s ease-in-out;
+    transition: .5s ease-in-out;
   }
 
   #navbar nav.active {
@@ -1039,12 +1039,13 @@ div:last-of-type hr {
   .work-content:nth-child(even) {
     margin-right: 0;
   }
-
-
-
 }
 
 @media only screen and (max-width: 480px) {
+  html {
+    font-size: 100%;
+  }
+
   #navbar {
     padding: 0 1.0875rem;
   }
