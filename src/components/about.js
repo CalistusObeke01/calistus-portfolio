@@ -19,12 +19,12 @@ const About = () => (
                 </p>
                 <p className="about-info">
                     Working experience  with the following programming tools 
-                    <abbr title="Hypertext Markup Language">HTML5</abbr>, 
-                    <abbr title="Cascading Style Sheets">CSS3</abbr>, 
-                    <abbr title="Accessible Rich Internet Application">ARIA</abbr>, 
-                    <abbr title="Leaner Style Sheets">LESS</abbr>, Bootstrap, Flexbox, Javascript,
-                    Typescript, Angular, React, 
-                    <abbr title="Command Line Interface">CLI</abbr>, GIT/Github.<br />
+                    <abbr title="Hypertext Markup Language"> HTML5</abbr>, 
+                    <abbr title="Cascading Style Sheets"> CSS3</abbr>, 
+                    <abbr title="Accessible Rich Internet Application"> ARIA</abbr>, 
+                    <abbr title="Leaner Style Sheets"> LESS</abbr>, Bootstrap, Flexbox, Javascript,
+                    Typescript, Angular, React, Gatsby,
+                    <abbr title="Command Line Interface"> CLI</abbr>, GIT/Github.<br />
                     I'm experienced in building RESTFUL API, understanding of responsiveness design,
                      and web standards
                 </p>
