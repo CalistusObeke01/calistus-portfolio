@@ -625,6 +625,10 @@ pre tt:after {
   text-decoration: none;
 }
 
+.btnStyling:hover {
+  opacity: 0.8;
+}
+
 .resumeStyle {
   text-decoration: none;
   color: #ffffff;
