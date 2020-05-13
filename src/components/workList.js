@@ -1,5 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+
 const WorkList = ({workDetails}) => (
     workDetails.map(workDetail => <div key={workDetail.id} className="work-container">
         <div className="work-img">
@@ -16,9 +17,9 @@ const WorkList = ({workDetails}) => (
                 </a>
             </h3>
             <p className="work-headings">Tools: <span>{workDetail.tools.join(', ')}</span></p>
-            <p className="work-info">
+            {/* <p className="work-info">
                 {workDetail.info}
-            </p>
+            </p> */}
         </div>
         <hr className="work-hr" />
     </div>)

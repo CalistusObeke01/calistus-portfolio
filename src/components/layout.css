@@ -822,6 +822,10 @@ pre tt:after {
 
 .work-content {
   margin-left: 92px;
+  min-width: 400px;
+  display: flex;
+  flex-direction: column;
+  align-self: center;
 }
 
 .work-headings {
@@ -939,6 +943,11 @@ div:last-of-type hr {
   .about-img {
     display: none
   }
+
+  .work-content  {
+    /* max-width: 300px; */
+    width: 100%
+  }
 }
 
 
@@ -1032,13 +1041,11 @@ div:last-of-type hr {
     padding-left: 92px;
   }
 
-  .work-content {
+  .work-content:nth-child(n) {
     margin-left: 0;
-  }
-
-  .work-content:nth-child(even) {
     margin-right: 0;
   }
+
 }
 
 @media only screen and (max-width: 480px) {
@@ -1098,6 +1105,12 @@ div:last-of-type hr {
     margin-top: 1.4rem;
   }
 
+}
+
+@media only screen and (max-width: 375px) {
+  .work-content:nth-child(n) {
+    min-width: 260px;
+  }
 }
 
 @media only screen and (max-width: 320px) {
